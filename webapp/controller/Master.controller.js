@@ -223,7 +223,7 @@ sap.ui.define([
 			 */
 			createGroupHeader : function (oGroup) {
 				return new GroupHeaderListItem({
-					title : oGroup.text,
+					title : oGroup.key,
 					upperCase : false
 				});
 			},
@@ -245,6 +245,14 @@ sap.ui.define([
 						target: {shellHash: "#Shell-home"}
 					});
 				}
+			},
+			
+			onButSel:function(){
+				var oFrag = new sap.ui.xmlfragment("finalapp.view.salesRegionSelect", this);
+				oFrag.open();
+			},
+			onConfirm:function(){
+			sap.m.MessageToast.show("hello confirmed");	
 			},
 
 			/* =========================================================== */

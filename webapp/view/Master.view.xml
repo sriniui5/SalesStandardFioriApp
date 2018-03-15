@@ -10,6 +10,9 @@
 		title="{masterView>/title}"
 		navButtonPress="onNavBack"
 		showNavButton="true">
+		<semantic:customHeaderContent>
+			<Button icon="sap-icon://customer" tooltip="Choose sales region" press="onButSel"/>
+		</semantic:customHeaderContent>
 		<semantic:subHeader>
 			<Bar id="headerBar">
 				<contentMiddle>
@@ -35,8 +38,9 @@
 				items="{
 					path: '/SalesOrderSet',
 					sorter: {
-						path: 'SalesOrderID',
-						descending: false
+						path: 'CustomerName',
+						descending: false,
+						group: true
 						},
 					groupHeaderFactory: '.createGroupHeader'
 				}"

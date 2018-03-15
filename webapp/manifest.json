@@ -115,6 +115,13 @@
 						"master",
 						"object"
 					]
+				},
+				{
+					"pattern": "Items",
+					"name": "Items",
+					"target": [
+						"Items"
+					]
 				}
 			],
 			"targets": {
@@ -128,6 +135,12 @@
 					"viewName": "Detail",
 					"viewId": "detail",
 					"viewLevel": 2
+				},
+				"Items": {
+					"viewName": "itemDetail",
+					"viewId": "itemDetail",
+					"viewLevel": 2,
+					"controlAggregation":"detailPages"
 				},
 				"detailObjectNotFound": {
 					"viewName": "DetailObjectNotFound",

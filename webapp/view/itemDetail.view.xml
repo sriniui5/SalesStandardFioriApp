@@ -1,4 +1,4 @@
 <mvc:View controllerName="finalapp.controller.itemDetail" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic"
 	xmlns:footerbar="sap.ushell.ui.footerbar">
-	
+	<Page title="Shopping cart page coming soon"></Page>
 </mvc:View>

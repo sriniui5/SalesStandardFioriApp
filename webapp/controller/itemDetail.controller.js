@@ -18,17 +18,17 @@ sap.ui.define([
 				// Model used to manipulate control states. The chosen values make sure,
 				// detail page is busy indication immediately so there is no break in
 				// between the busy indication for loading the view's meta data
-				var oViewModel = new JSONModel({
+			/*	var oViewModel = new JSONModel({
 					busy : false,
 					delay : 0,
 					lineItemListTitle : this.getResourceBundle().getText("detailLineItemTableHeading")
-				});
+				});*/
 
-				this.getRouter().getRoute("object").attachPatternMatched(this._onObjectMatched, this);
+/*				this.getRouter().getRoute("object").attachPatternMatched(this._onObjectMatched, this);
 
 				this.setModel(oViewModel, "detailView");
 
-				this.getOwnerComponent().getModel().metadataLoaded().then(this._onMetadataLoaded.bind(this));
+				this.getOwnerComponent().getModel().metadataLoaded().then(this._onMetadataLoaded.bind(this));*/
 			}
 
 			/* =========================================================== */

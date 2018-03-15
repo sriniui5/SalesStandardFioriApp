@@ -89,6 +89,9 @@ sap.ui.define([
 					oViewModel.setProperty("/lineItemListTitle", sTitle);
 				}
 			},
+			onCart:function(){
+			this.getRouter().navTo("Items");	
+			},
 
 			/* =========================================================== */
 			/* begin: internal methods                                     */

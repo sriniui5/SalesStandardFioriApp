@@ -3,7 +3,7 @@
 	<semantic:DetailPage id="page" navButtonPress="onNavBack" showNavButton="{device>/system/phone}" title="{i18n>detailTitle}"
 		busy="{detailView>/busy}" busyIndicatorDelay="{detailView>/delay}">
 		<semantic:customHeaderContent>
-				<Button icon="sap-icon://cart" tooltip="Cart"/>
+				<Button icon="sap-icon://cart" tooltip="Cart" press="onCart"/>
 		</semantic:customHeaderContent>
 		<semantic:content>
 			<ObjectHeader id="objectHeader" title="{SalesOrderID}" number="{ path: 'NetAmount', formatter: '.formatter.currencyValue' }"

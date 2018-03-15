@@ -39,7 +39,7 @@
 					path: '/SalesOrderSet',
 					sorter: {
 						path: 'CustomerName',
-						descending: false,
+						descending: true,
 						group: true
 						},
 					groupHeaderFactory: '.createGroupHeader'
